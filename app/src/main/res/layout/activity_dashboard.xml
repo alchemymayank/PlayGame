@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF"
+    >
+
+
+    <!--<Button-->
+        <!--android:id="@+id/button_sign_out"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sign Out"-->
+        <!--android:layout_margin="16dp"-->
+        <!--/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button_check"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Check"-->
+        <!--android:onClick="check"/>-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/button_play"
+            android:background="@color/colorPrimaryPurple"
+            android:textColor="#FFFF"
+            android:layout_marginBottom="8dp"
+            android:onClick="startPlay"/>
+
+        <Button
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_achievements"
+            android:text="Achievements"
+            android:layout_marginBottom="8dp"
+            android:onClick="showAchievements"/>
+
+        <Button
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_leaderboards"
+            android:text="Leaderboards"
+            android:onClick="showLeaderboards"/>
+
+        <Button
+            android:onClick="showSettings"
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_settings"
+            android:text="Settings"/>
+
+        <Button
+            android:onClick="openAchievementOne"
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/open_achievement_one"
+            android:text="Achievement 1"/>
+
+        <Button
+            android:onClick="openAchievementTwo"
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/open_achievement_2"
+            android:text="Achievement 2"/>
+
+        <Button
+            android:onClick="openLeaderboardOne"
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/open_leaderboard_one"
+            android:text="Leaderboard 1"/>
+
+        <Button
+            android:onClick="openRealtime"
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/open_leaderboard_two"
+            android:text="Realtime Player Test"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">PlayGame</string>
+
+    <string name="app_id">758281469566</string>
+
+
+    <string name="status_multiplayer_error_not_trusted_tester">Anyone you invite must be a trusted tester</string>
+    <string name="match_error_already_rematched">This rematch has already been started!</string>
+    <string name="client_reconnect_required">Games client reconnect required</string>
+    <string name="network_error_operation_failed">Network error: Operation failed</string>
+    <string name="internal_error">Internal error</string>
+    <string name="unexpected_status">Unexpected status: %1$s</string>
+    <string name="match_error_inactive_match">This match is inactive.</string>
+    <string name='match_error_locally_modified'>This match has locally-modified data.  This operation cannot be performed until the match is sent to the server.</string>
+    <string name="score_label">%1$s - Me</string>.
+    <string name="status_exception_error">%1$s (status %2$d). %3$s.</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signin_other_error">There was an issue with sign in. Please try again later.</string>
+    <string name="log_out">Logout</string>
+
+    <string name="game_blurb">Game Blurb</string>
+    <string name="leave_room">Leave Room</string>
+
+    <string-array name="amountList">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+
+    <string-array name="subjectList">
+        <item>Aptitude</item>
+        <item>Reasoning</item>
+        <item>General Awareness</item>
+        <item>Computer</item>
+        <item>English</item>
+        <item>General Knowledge</item>
+        <item>History</item>
+
+
+    </string-array>
+
+
+    <string-array name="subject_code">
+        <item>apt</item>
+        <item>rsn</item>
+        <item>ga</item>
+        <item>cmp</item>
+        <item>eng</item>
+        <item>gk</item>
+        <item>htr</item>
+        <item>geo</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="achievement">Achievement</string>
+    <string name="my_achievement_id">CgkI_vzj6IgWEAIQCQ</string>
+    <string name="my_achievement_id_2">CgkI_vzj6IgWEAIQCg</string>
+    <string name="leaderboard_id">CgkI_vzj6IgWEAIQCA</string>
+
+    <string name="game_problem">An error occurred while starting the game. Please try again.</string>
+
+    <string name="is_inviting_you">is challenging you to a game!</string>
+</resources>

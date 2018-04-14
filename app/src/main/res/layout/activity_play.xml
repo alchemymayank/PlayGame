@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Single Player"
+            android:id="@+id/button_single_player"
+            android:background="@color/colorPrimaryPurple"
+            android:textColor="#FFFF"
+            android:layout_marginBottom="8dp"
+            android:onClick="showSinglePlayer"/>
+
+        <Button
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_quick_play"
+            android:text="Quick Play"
+            android:layout_marginBottom="8dp"
+            android:onClick="showQuickPlay"/>
+
+        <Button
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_invite_friends"
+            android:text="Invite Friends"
+            android:onClick="showInviteFriends"/>
+
+        <Button
+            android:onClick="showInvitations"
+            android:textColor="#FFFF"
+            android:background="@color/colorPrimaryPurple"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_see_invitations"
+            android:text="Invitations"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

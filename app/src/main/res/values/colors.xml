@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#F50057</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="textColorBlack">#000000</color>
+
+
+    <color name="colorPrimaryPurple">#7B1FA2</color>
+    <color name="colorPrimaryDarkPurple">#691A99</color>
+    <color name="colorAccentPurple">#68EFAD</color>
+
+    <color name="AccentColor">#cc0000</color>
+    <color name="PopupColor">@color/AccentColor</color>
+    <color name="PopupTextColor">#ffffff</color>
+    <color name="ButtonTextColor">#ffffff</color>
+    <color name="BlurbColor">#a0a0a0</color>
+    <color name="SignOutButtonBackground">#e0e0e0</color>
+    <color name="SignOutButtonTextColor">#404040</color>
+
+    <color name="colorPrimaryNew">#125688</color>
+    <color name="colorPrimaryDarkNew">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccentNew">#c8e8ff</color>
+    <color name="colorGreen">#04724D</color>
+    <color name="colorDarkGreen">#046846</color>
+</resources>
