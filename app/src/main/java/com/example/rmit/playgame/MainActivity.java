@@ -1,5 +1,6 @@
 package com.example.rmit.playgame;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -78,6 +79,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 //            R.id.button_single_player_2
     };
 
+    @SuppressLint("RestrictedApi")
     public void signOut() {
         Log.d(TAG, "signOut()");
 
@@ -123,7 +125,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         if (requestCode == RC_SIGN_IN) {
 
-            Task<GoogleSignInAccount> task =
+            @SuppressLint("RestrictedApi") Task<GoogleSignInAccount> task =
                     GoogleSignIn.getSignedInAccountFromIntent(intent);
 
             try {
@@ -184,6 +186,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         signInSilently();
     }
 
+    @SuppressLint("RestrictedApi")
     public void startSignInIntent() {
         startActivityForResult(mGoogleSignInClient.getSignInIntent(), RC_SIGN_IN);
     }
@@ -215,12 +218,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                             mPlayerId = player.getPlayerId();
                             Log.d("Player ID", mPlayerId);
                             Log.d("Display Name", player.getDisplayName());
-                            Log.d("Player Name", player.getName());
+                            Log.d("Player Name", player.getTitle());
                             findViewById(R.id.button_sign_in).setVisibility(View.GONE);
                             //findViewById(R.id.button_sign_out).setVisibility(View.VISIBLE);
                             Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
                             intent.putExtra("DisplayName", player.getDisplayName());
-                            intent.putExtra("PlayerName", player.getName());
+                            intent.putExtra("PlayerName", player.getTitle());
                             startActivity(intent);
                             finish();
 

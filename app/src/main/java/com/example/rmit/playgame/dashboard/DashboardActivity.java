@@ -1,5 +1,6 @@
 package com.example.rmit.playgame.dashboard;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -229,11 +230,12 @@ public class DashboardActivity extends BaseActivity {
             @Override
             public void onSuccess(Player player) {
                 Log.d("Dashboard Display Name", player.getDisplayName());
-                Log.d("Dashboard Player Name", player.getName());
+                Log.d("Dashboard Player Name", player.getTitle());
             }
         });
     }
 
+    @SuppressLint("RestrictedApi")
     private void showAchievements() {
         Games.getAchievementsClient(this, GoogleSignIn.getLastSignedInAccount(this))
                 .getAchievementsIntent()
@@ -292,11 +294,13 @@ public class DashboardActivity extends BaseActivity {
         checkForAchievements(10,10);
     }
 
+    @SuppressLint("RestrictedApi")
     public void openLeaderboardOne(View view) {
         Games.getLeaderboardsClient(this, GoogleSignIn.getLastSignedInAccount(this))
                 .submitScore(getString(R.string.leaderboard_id), 1337);
     }
 
+    @SuppressLint("RestrictedApi")
     public void openLeaderboardTwo(View view) {
 
 
@@ -312,6 +316,7 @@ public class DashboardActivity extends BaseActivity {
     private EventsClient mEventsClient;
     private PlayersClient mPlayersClient;
 
+    @SuppressLint("RestrictedApi")
     private void checkForAchievements(int requestedScore, int finalScore) {
         // Check if each condition is met; if so, unlock the corresponding
         // achievement.
